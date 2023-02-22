@@ -44,7 +44,7 @@ That's it! IAM user is successfully created.
 
 -> Approach and Coding Process:
 
-##Need to create Virtual Private CLoud(VPC) -- vpc.py
+## Need to create Virtual Private CLoud(VPC) -- vpc.py
 
 - Code strats with importing boto3 which is used for communication with AWS Services
 
@@ -92,7 +92,7 @@ That's it! IAM user is successfully created.
  
  - The last line prints the Instance ID that os retrieved
  
- ##Creating S3 and Deploying a static website in it. -- bucket.py
+ ## Creating S3 and Deploying a static website in it. -- bucket.py
  
  - create a S3 client
  
