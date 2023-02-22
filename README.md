@@ -64,7 +64,7 @@ That's it! IAM user is successfully created.
 
 - The last tw lines just print a successfulr message with ID's of VPC and subnet.
 
-##Need to get AMI(Amazon Machine Image) ID -- ami.py (or we can also find in the AWS console)
+## Need to get AMI(Amazon Machine Image) ID -- ami.py (or we can also find in the AWS console)
 
 - creates an ec2 client
 - ec2 client is the response. describe images(...) invokes the EC2 client's describe images() method, which provides details about the Amazon images that are currently accessible. The owner of the images is identified by their ID in the Owners parameter, which in this case is the legitimate owner of the Ubuntu AMI. The filters to be applied to the image results are specified by the Filters parameter. The filter in this instance looks for AMIs with names that begin with "ubuntu-bionic-18.04-amd64-server-," which denotes the most recent iteration of the recognised Ubuntu AMI for the specified area.
@@ -72,7 +72,7 @@ That's it! IAM user is successfully created.
 - The describe images() response's ['ImageId'] field pulls the ID of the most recent Ubuntu AMI. Launching EC2 instances with the supplied Ubuntu AMI requires the ID.
 - The last line prints the AMI ID that is retrieved.
 
-## Creating EC2 instance and Attaching subnetID to it.
+## Creating EC2 instance and Attaching subnetID to it. --ec2.py
  Before starting the code 
  we need to create an KeyPair in AWS you can just search KeyPairs and create it.Also Download the key pair in the form of ".pem" extension and select type as "RSA".
  KeyPairs contains a public key and private key.
@@ -149,7 +149,7 @@ The following are some of the difficulties:
 Nonetheless, I  able to overcome these difficulties and successfully install the EC2 instance and S3 website with the aid of the AWS documentation and community forums.
 References: https://realpython.com/python-boto3-aws-s3/
 
-##Outcomes
+## Outcomes
 
 - Gained hands-on experience with Amazon Web Services (AWS) and learned how to interact with AWS services using Python and the boto3 library.
 - Learned how to create and configure VPCs, subnets, and EC2 instances in AWS using Python and boto3.
@@ -157,7 +157,7 @@ References: https://realpython.com/python-boto3-aws-s3/
 - Learned how to automate the deployment and configuration of software on EC2 instances using remote execution and Python.
 - Developed skills in writing clean, well-structured Python code that interacts with AWS services using the boto3 library
 
-##Conclusion
+## Conclusion
 
 In this project, I've shown how to deploy an EC2 instance and a static S3 website using Python and the Boto API, as well as how to remotely execute Nginx installation on the EC2 instance. The deployment of web apps or other cloud services in AWS can be automated using this.
 
