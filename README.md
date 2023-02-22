@@ -2,14 +2,14 @@
 
 To deploy an EC2 instance, build a VPC and subnet, construct an S3 bucket, and deploy a static website to that bucket, these projects offer Python scripts that uses Boto API. To remotely install Ngnix in the newly formed EC2 instance, another Python script is used.
 
--> Objectives
+## Objectives
 
 1. 	Create a VPC and Subnet
 2.	Deploy an EC2 instance and attach it to the subnet
 3.	Create an S3 bucket and deploy a static website (hello world) using Python
 4.	Install Nginx in the EC2 instance using remote execution
 
-->Installation
+## Installation
 
 To use the scripts you will need to install the following dependencies:
 
@@ -42,7 +42,7 @@ That's it! IAM user is successfully created.
 9. Enter the accesss key and Secret access key with default region(in this case i have used "us-west-2") and leave other option Default output and click Enter
 10. If you not wish to use qws configure then you need to mention access keys direclty in the scripts but it may produce security issues.
 
--> Approach and Coding Process:
+## APPROACH AND CODING PROCESS
 
 ## Need to create Virtual Private CLoud(VPC) -- vpc.py
 
